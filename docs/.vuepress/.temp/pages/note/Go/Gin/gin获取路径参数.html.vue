@@ -1,0 +1,25 @@
+<template><div><h1 id="gin获取路径参数" tabindex="-1"><a class="header-anchor" href="#gin获取路径参数"><span>gin获取路径参数</span></a></h1>
+<div class="language-go line-numbers-mode" data-ext="go" data-title="go"><pre v-pre class="language-go"><code><span class="line"><span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">	router <span class="token operator">:=</span> gin<span class="token punctuation">.</span><span class="token function">Default</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+<span class="line"></span>
+<span class="line">	<span class="token comment">// 此规则能够匹配/user/john这种格式，但不能匹配/user/ 或 /user这种格式</span></span>
+<span class="line">	router<span class="token punctuation">.</span><span class="token function">GET</span><span class="token punctuation">(</span><span class="token string">"/user/:name"</span><span class="token punctuation">,</span> <span class="token keyword">func</span><span class="token punctuation">(</span>c <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">		name <span class="token operator">:=</span> c<span class="token punctuation">.</span><span class="token function">Param</span><span class="token punctuation">(</span><span class="token string">"name"</span><span class="token punctuation">)</span></span>
+<span class="line">		c<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span>http<span class="token punctuation">.</span>StatusOK<span class="token punctuation">,</span> <span class="token string">"Hello %s"</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span></span>
+<span class="line">	<span class="token punctuation">}</span><span class="token punctuation">)</span></span>
+<span class="line"></span>
+<span class="line">	<span class="token comment">// 但是，这个规则既能匹配/user/john/格式也能匹配/user/john/send这种格式</span></span>
+<span class="line">	<span class="token comment">// 如果没有其他路由器匹配/user/john，它将重定向到/user/john/</span></span>
+<span class="line">	router<span class="token punctuation">.</span><span class="token function">GET</span><span class="token punctuation">(</span><span class="token string">"/user/:name/*action"</span><span class="token punctuation">,</span> <span class="token keyword">func</span><span class="token punctuation">(</span>c <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">		name <span class="token operator">:=</span> c<span class="token punctuation">.</span><span class="token function">Param</span><span class="token punctuation">(</span><span class="token string">"name"</span><span class="token punctuation">)</span></span>
+<span class="line">		action <span class="token operator">:=</span> c<span class="token punctuation">.</span><span class="token function">Param</span><span class="token punctuation">(</span><span class="token string">"action"</span><span class="token punctuation">)</span></span>
+<span class="line">		message <span class="token operator">:=</span> name <span class="token operator">+</span> <span class="token string">" is "</span> <span class="token operator">+</span> action</span>
+<span class="line">		c<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span>http<span class="token punctuation">.</span>StatusOK<span class="token punctuation">,</span> message<span class="token punctuation">)</span></span>
+<span class="line">	<span class="token punctuation">}</span><span class="token punctuation">)</span></span>
+<span class="line"></span>
+<span class="line">	router<span class="token punctuation">.</span><span class="token function">Run</span><span class="token punctuation">(</span><span class="token string">":8080"</span><span class="token punctuation">)</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+
+
