@@ -57,11 +57,10 @@ export const routes = Object.fromEntries([
   ["/note/Vue/element-plus/element-plus%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C.html", { loader: () => import(/* webpackChunkName: "note_Vue_element-plus_element-plus表单校验.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/element-plus/element-plus表单校验.html.js"), meta: {"title":"element-plus里的表单校验"} }],
   ["/note/Vue/element-plus/elementplus%E5%8E%BB%E9%99%A4%E8%8F%9C%E5%8D%95%E4%B8%8B%E5%88%92%E7%BA%BF.html", { loader: () => import(/* webpackChunkName: "note_Vue_element-plus_elementplus去除菜单下划线.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/element-plus/elementplus去除菜单下划线.html.js"), meta: {"title":""} }],
   ["/note/Vue/error/%E6%97%A0%E6%B3%95%E6%89%BE%E5%88%B0.vue.html", { loader: () => import(/* webpackChunkName: "note_Vue_error_无法找到.vue.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/error/无法找到.vue.html.js"), meta: {"title":""} }],
-  ["/note/Vue/pinia/pinia%E7%9A%84%E4%BF%A1%E6%81%AF%E5%AD%98%E5%85%A5LocalStorage.html", { loader: () => import(/* webpackChunkName: "note_Vue_pinia_pinia的信息存入LocalStorage.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/pinia/pinia的信息存入LocalStorage.html.js"), meta: {"title":"pinia的信息存入LocalStorage"} }],
-  ["/note/Vue/pinia/vue3%E4%B8%AD%E7%9A%84pinia%E7%9A%84%E4%BD%BF%E7%94%A8.html", { loader: () => import(/* webpackChunkName: "note_Vue_pinia_vue3中的pinia的使用.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/pinia/vue3中的pinia的使用.html.js"), meta: {"title":"Vue3中pinia的使用"} }],
   ["/note/Vue/sass/sass(scss)%E7%9A%84%E5%8E%9F%E7%94%9F%E9%85%8D%E7%BD%AE.html", { loader: () => import(/* webpackChunkName: "note_Vue_sass_sass(scss)的原生配置.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/sass/sass(scss)的原生配置.html.js"), meta: {"title":""} }],
   ["/note/Vue/sass/sass%E4%B8%AD%E7%9A%84%E5%8D%A0%E4%BD%8D%E9%80%89%E6%8B%A9%E5%99%A8.html", { loader: () => import(/* webpackChunkName: "note_Vue_sass_sass中的占位选择器.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/sass/sass中的占位选择器.html.js"), meta: {"title":""} }],
-  ["/note/Vue/settings/prettier%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%8F%92%E4%BB%B6.html", { loader: () => import(/* webpackChunkName: "note_Vue_settings_prettier格式化插件.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/settings/prettier格式化插件.html.js"), meta: {"title":"前端代码格式化 - 【Prettier】 - 常见配置 + 踩坑日记"} }],
+  ["/note/Vue/pinia/pinia%E7%9A%84%E4%BF%A1%E6%81%AF%E5%AD%98%E5%85%A5LocalStorage.html", { loader: () => import(/* webpackChunkName: "note_Vue_pinia_pinia的信息存入LocalStorage.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/pinia/pinia的信息存入LocalStorage.html.js"), meta: {"title":"pinia的信息存入LocalStorage"} }],
+  ["/note/Vue/pinia/vue3%E4%B8%AD%E7%9A%84pinia%E7%9A%84%E4%BD%BF%E7%94%A8.html", { loader: () => import(/* webpackChunkName: "note_Vue_pinia_vue3中的pinia的使用.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/pinia/vue3中的pinia的使用.html.js"), meta: {"title":"Vue3中pinia的使用"} }],
   ["/note/Vue/js/async%E5%92%8Cawait%E7%9A%84%E4%BD%BF%E7%94%A8.html", { loader: () => import(/* webpackChunkName: "note_Vue_js_async和await的使用.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/js/async和await的使用.html.js"), meta: {"title":"js async和await的用法(ES7)"} }],
   ["/note/Vue/js/es6%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2.html", { loader: () => import(/* webpackChunkName: "note_Vue_js_es6模板字符串.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/js/es6模板字符串.html.js"), meta: {"title":"es6模板字符串"} }],
   ["/note/Vue/js/export%E5%92%8Cexport_default%E7%9A%84%E5%8C%BA%E5%88%AB.html", { loader: () => import(/* webpackChunkName: "note_Vue_js_export和export_default的区别.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/js/export和export_default的区别.html.js"), meta: {"title":"export 和 export default的区别"} }],
@@ -69,6 +68,7 @@ export const routes = Object.fromEntries([
   ["/note/Vue/js/js%E5%87%BD%E6%95%B0%E6%B3%A8%E9%87%8A.html", { loader: () => import(/* webpackChunkName: "note_Vue_js_js函数注释.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/js/js函数注释.html.js"), meta: {"title":"js函数注释"} }],
   ["/note/Vue/js/js%E7%9A%84%E5%8F%AF%E9%80%89%E9%93%BE%E8%BF%90%E7%AE%97%E7%AC%A6.html", { loader: () => import(/* webpackChunkName: "note_Vue_js_js的可选链运算符.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/js/js的可选链运算符.html.js"), meta: {"title":"js的可选链运算符  ?."} }],
   ["/note/Vue/js/promise%E5%87%BD%E6%95%B0%E7%9A%84%E4%BD%BF%E7%94%A8.html", { loader: () => import(/* webpackChunkName: "note_Vue_js_promise函数的使用.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/js/promise函数的使用.html.js"), meta: {"title":"JavaScript高级深入浅出：Promise 详解(ES6)"} }],
+  ["/note/Vue/settings/prettier%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%8F%92%E4%BB%B6.html", { loader: () => import(/* webpackChunkName: "note_Vue_settings_prettier格式化插件.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/settings/prettier格式化插件.html.js"), meta: {"title":"前端代码格式化 - 【Prettier】 - 常见配置 + 踩坑日记"} }],
   ["/note/Vue/vue-router/vue3%E4%B8%ADkeep-alive%E7%9A%84%E4%BD%BF%E7%94%A8.html", { loader: () => import(/* webpackChunkName: "note_Vue_vue-router_vue3中keep-alive的使用.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/vue-router/vue3中keep-alive的使用.html.js"), meta: {"title":"keep-alive与router-view的相爱相杀🍃"} }],
   ["/note/Vue/vue-router/vue3%E4%B8%AD%E6%BB%9A%E5%8A%A8%E8%A1%8C%E4%B8%BAscrollBehavior.html", { loader: () => import(/* webpackChunkName: "note_Vue_vue-router_vue3中滚动行为scrollBehavior.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/vue-router/vue3中滚动行为scrollBehavior.html.js"), meta: {"title":"滚动行为"} }],
   ["/note/Vue/vue-router/vue3%E4%B8%AD%E7%9A%84router-view.html", { loader: () => import(/* webpackChunkName: "note_Vue_vue-router_vue3中的router-view.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/vue-router/vue3中的router-view.html.js"), meta: {"title":"Vue3中的router-view"} }],
@@ -96,20 +96,3 @@ export const routes = Object.fromEntries([
   ["/note/Vue/vueuse/useScroll.html", { loader: () => import(/* webpackChunkName: "note_Vue_vueuse_useScroll.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/note/Vue/vueuse/useScroll.html.js"), meta: {"title":"useScroll"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"C:/Users/pzj/Desktop/university code/code_resourse/program/my-docs/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}

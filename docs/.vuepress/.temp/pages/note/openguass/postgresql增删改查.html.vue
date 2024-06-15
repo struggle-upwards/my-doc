@@ -14,10 +14,10 @@
 例：insert into mytable values (1,100),(2,200);</p>
 <h3 id="_6-查看数据表" tabindex="-1"><a class="header-anchor" href="#_6-查看数据表"><span>（6）查看数据表：</span></a></h3>
 <p><code v-pre>select * from 表名;</code></p>
-<p>查询pg_tables表获取当前数据库中所有表的信息（pg_tables是系统视图）</p>
+<p>查询 pg_tables 表获取当前数据库中所有表的信息（pg_tables 是系统视图）</p>
 <div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre v-pre class="language-text"><code><span class="line">select * from pg_tables</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>通常我们只关注public中的表，只需要加上以下查询条件即可</p>
+<div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>通常我们只关注 public 中的表，只需要加上以下查询条件即可</p>
 <div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre v-pre class="language-text"><code><span class="line">select tablename from pg_tables where schemaname='public'</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_7-修改表中数据" tabindex="-1"><a class="header-anchor" href="#_7-修改表中数据"><span>（7）修改表中数据：</span></a></h3>
@@ -28,14 +28,12 @@
 例：delete mytable where number=1;</p>
 <h3 id="_9-增加表中的字段" tabindex="-1"><a class="header-anchor" href="#_9-增加表中的字段"><span>（9）增加表中的字段：</span></a></h3>
 <p><code v-pre>alter table 表名 add 字段 字段名;</code>
-例1：alter table mytable add country char;
-例2：alter table mytable add mail char(20);</p>
+例 1：alter table mytable add country char;
+例 2：alter table mytable add mail char(20);</p>
 <h3 id="_10-退出数据库" tabindex="-1"><a class="header-anchor" href="#_10-退出数据库"><span>（10）退出数据库：</span></a></h3>
 <p><code v-pre>\q</code></p>
 <h3 id="_11-查看所有用户" tabindex="-1"><a class="header-anchor" href="#_11-查看所有用户"><span>（11）查看所有用户：</span></a></h3>
 <p><code v-pre>\du</code></p>
-<p>###（12）查看所有数据库：</p>
-<p><code v-pre>\l</code></p>
 </div></template>
 
 

@@ -2,8 +2,6 @@
 
 gsql postgres
 
-
-
 ### （1）创建用户：
 
 `create user 用户名 with password "用户密码";`
@@ -30,17 +28,13 @@ gsql postgres
 
 `select * from 表名;`
 
-查询pg_tables表获取当前数据库中所有表的信息（pg_tables是系统视图）
-
-
+查询 pg_tables 表获取当前数据库中所有表的信息（pg_tables 是系统视图）
 
 ```
 select * from pg_tables
 ```
 
-通常我们只关注public中的表，只需要加上以下查询条件即可
-
-
+通常我们只关注 public 中的表，只需要加上以下查询条件即可
 
 ```
 select tablename from pg_tables where schemaname='public'
@@ -59,8 +53,8 @@ select tablename from pg_tables where schemaname='public'
 ### （9）增加表中的字段：
 
 `alter table 表名 add 字段 字段名;`
-例1：alter table mytable add country char;
-例2：alter table mytable add mail char(20);
+例 1：alter table mytable add country char;
+例 2：alter table mytable add mail char(20);
 
 ### （10）退出数据库：
 
@@ -70,6 +64,3 @@ select tablename from pg_tables where schemaname='public'
 
 `\du`
 
-###（12）查看所有数据库：
-
-`\l`
